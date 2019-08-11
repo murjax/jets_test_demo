@@ -17,7 +17,7 @@ ActionView::Template::Error: Mysql2::Error: Table 'demo_test.posts' doesn't exis
 ```
 The `posts` table was not created on the test database.
 
-7. `jets db:migrate JETS_ENV=test`
+7. `JETS_ENV=test jets db:migrate `
 8. `bundle exec rspec`
 
 The test passes because the `posts` table was created on the test database.
